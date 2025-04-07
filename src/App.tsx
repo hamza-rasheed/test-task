@@ -1,3 +1,4 @@
+import Footer from "./components/sections/footer/footer";
 import Landing from "./components/sections/landing/landing";
 import GetMeds from "./components/sections/getMeds/getMeds";
 import WhereWeAre from "./components/sections/whereWeAre/whereWeAre";
@@ -14,6 +15,7 @@ const App = () => {
 			<SuboxoneTreatment />
 			<WhereWeAre />
 			<GetMeds />
+			<Footer />
 		</>
 	);
 };
