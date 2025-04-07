@@ -1,7 +1,7 @@
+import { memo } from "react";
 import { Facebook, Phone, Twitter, Youtube } from "lucide-react";
 
 import { strings } from "../../../core/strings/strings";
-import { memo } from "react";
 
 const Footer = () => {
 	return (

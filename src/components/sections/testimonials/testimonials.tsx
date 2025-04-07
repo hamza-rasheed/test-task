@@ -10,6 +10,7 @@ const Testimonials = () => {
 	return (
 		<section className='w-screen min-h-full flex flex-col'>
 			<div className='w-full xl:px-40 lg:px-10 px-8'>
+				{/* Padding different for different screen sizes. This div acts as a row for large screens and column for smaller screens */}
 				<div className='w-full md:my-20 my-10 flex-1 flex md:flex-row flex-col justify-between items-center md:gap-x-10'>
 					<div className='h-fit'>
 						<h2 className='text-button-primary text-xl md:text-2xl font-cabinetGroteskMedium'>
@@ -30,11 +31,13 @@ const Testimonials = () => {
 							src={images.landingImage}
 							className='w-full object-contain rounded-2xl -z-10'
 							alt='landing-image'
+							loading='lazy'
 						/>
 						<img
 							src={images.playButton}
 							className='hover:opacity-80 xl:w-36 w-28 cursor-pointer absolute'
 							alt='playButton'
+							loading='lazy'
 						/>
 					</div>
 				</div>
@@ -54,6 +57,7 @@ const Testimonials = () => {
 						</CustomButton>
 					</div>
 				</div>
+				{/* This div will act as a row for large screens and column for smaller screens */}
 				<div className='w-full flex md:flex-row flex-col justify-between items-start mb-40 md:gap-0 md:gap-x-10 gap-3'>
 					<TestimonialCards
 						image={images.user.user1}

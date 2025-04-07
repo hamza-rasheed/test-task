@@ -9,6 +9,7 @@ const OurMission = () => {
 			style={{ backgroundImage: `url(${images.firstGif})` }}
 		>
 			<div className='absolute inset-0 bg-white opacity-75'></div>
+			{/* Padding different for different screen sizes. This div acts as a row for large screens and column for smaller screens */}
 			<div className='relative z-10 text-2xl flex md:flex-row flex-col items-center justify-between h-full xl:px-40 lg:px-10 px-8 lg:gap-x-20 gap-x-10'>
 				<div className='flex-1'>
 					<h1 className='font-cabinetGroteskMedium lg:text-5xl text-text-primary md:text-4xl text-3xl md:mb-2 mb-4'>

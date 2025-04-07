@@ -17,26 +17,31 @@ const WhereWeAre = () => {
 					{strings.whereWeAre.heading}
 				</h1>
 				<div className='flex flex-row justify-start items-center md:w-[35vw] w-full mt-4 md:mt-0'>
+					{/* Using external package for slider */}
 					<Marquee speed={80} pauseOnHover={true} gradient={false}>
 						<img
 							src={images.channels.cbs}
 							className='channelsImages'
 							alt='CBS News'
+							loading='lazy'
 						/>
 						<img
 							src={images.channels.abc}
 							className='channelsImages'
 							alt='ABC'
+							loading='lazy'
 						/>
 						<img
 							src={images.channels.nbc}
 							className='channelsImages'
 							alt='NBC'
+							loading='lazy'
 						/>
 						<img
 							src={images.channels.fox}
 							className='channelsImages'
 							alt='FOX'
+							loading='lazy'
 						/>
 					</Marquee>
 				</div>
@@ -70,6 +75,7 @@ const WhereWeAre = () => {
 					</div>
 				</div>
 				<div className='md:w-[50vw] w-full'>
+					{/* USA MAP COMPONENT */}
 					<USAMap />
 				</div>
 			</div>

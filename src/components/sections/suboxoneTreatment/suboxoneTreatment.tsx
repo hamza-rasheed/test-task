@@ -8,11 +8,13 @@ import SideSteps from "../../reuseable/sideSteps/sideSteps";
 
 const SuboxoneTreatment = () => {
 	return (
+		// Padding different for different screen sizes. This div acts as a row for large screens and column for smaller screens
 		<section className='bg-[linear-gradient(-123.74deg,rgba(73,199,171,0.32)_11.54%,rgba(255,255,255,0.32)_111.58%)] w-screen h-fit rounded-xl xl:px-40 lg:px-10 px-8 lg:py-20 py-10 relative min-h-[80vh]'>
 			<img
 				src={images.secondGif}
 				alt='gif-circle'
 				className='absolute inset-0 m-auto h-[55%] object-contain -z-10 opacity-90'
+				loading='lazy'
 			/>
 			<h2 className='text-button-primary text-xl md:text-2xl font-cabinetGroteskMedium'>
 				{strings.suboxone.subHeading}
@@ -26,6 +28,8 @@ const SuboxoneTreatment = () => {
 					<ArrowUpRightIcon className='w-5 h-5' />
 				</CustomButton>
 			</div>
+			{/* These divs act as a row for large screens and column for smaller screens */}
+
 			<div className='flex flex-col md:flex-row justify-between items-center mt-10 gap-2 md:gap-0'>
 				<SideSteps
 					title={strings.suboxone.steps[0].title}

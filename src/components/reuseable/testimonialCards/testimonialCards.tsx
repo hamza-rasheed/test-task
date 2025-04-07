@@ -24,6 +24,7 @@ const TestimonialCards = ({
 					src={image}
 					alt='profile-image'
 					className='lg:h-[3.75rem] h-11 object-contain'
+					loading='lazy'
 				/>
 				<p className='font-cabinetGroteskMedium text-text-primary lg:text-xl text-lg group-hover:md:ml-1 duration-200'>
 					{userName}
@@ -45,6 +46,7 @@ function Star({
 			src={images.star[variant]}
 			alt={variant}
 			className='lg:w-6 w-4 object-contain'
+			loading='lazy'
 		/>
 	);
 }

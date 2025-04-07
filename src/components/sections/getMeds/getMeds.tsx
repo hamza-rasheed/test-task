@@ -1,10 +1,10 @@
+import { memo } from "react";
 import { ArrowUpRightIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { images } from "../../../core/images/images";
 import { strings } from "../../../core/strings/strings";
 import CustomButton from "../../reuseable/button/button";
-import { memo } from "react";
 
 const GetMeds = () => {
 	return (
@@ -13,8 +13,10 @@ const GetMeds = () => {
 				src={images.thirdGif}
 				alt='bg-gif'
 				className='h-full w-full object-cover opacity-60 absolute top-0 -z-10'
+				loading='lazy'
 			/>
 			<div className='lg:w-1/2 w-[80%] text-xl h-fit text-center flex flex-col justify-center items-center my-20'>
+				{/* The h2 tag slides from the left to the center animations */}
 				<motion.h2
 					className='font-cabinetGroteskMedium md:text-2xl text-xl'
 					initial={{ x: "-100vw", opacity: 0 }}
@@ -24,6 +26,7 @@ const GetMeds = () => {
 					{strings.getMeds.secureAccess}
 				</motion.h2>
 
+				{/* The h1 tag slides from the right to the center using framer motion animations */}
 				<motion.h1
 					className='font-cabinetGroteskSemiBold lg:text-5xl text-3xl my-6'
 					initial={{ x: "100vw", opacity: 0 }}

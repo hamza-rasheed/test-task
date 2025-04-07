@@ -86,6 +86,8 @@ const Navbar = () => {
 						<X className='min-w-6 min-h-6' />
 					</CustomButton>
 				</div>
+
+				{/* Used framer motion here to animate the opening and closing of the side menu in the smaller screens */}
 				<motion.ul
 					className='flex-col justify-center my-4 flex lg:flex-row lg:justify-start items-center gap-x-2 lg:gap-x-4'
 					initial='closed'
