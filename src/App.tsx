@@ -1,4 +1,5 @@
 import Landing from "./components/sections/landing/landing";
+import GetMeds from "./components/sections/getMeds/getMeds";
 import WhereWeAre from "./components/sections/whereWeAre/whereWeAre";
 import OurMission from "./components/sections/testimonials/OurMission";
 import Testimonials from "./components/sections/testimonials/testimonials";
@@ -12,6 +13,7 @@ const App = () => {
 			<Testimonials />
 			<SuboxoneTreatment />
 			<WhereWeAre />
+			<GetMeds />
 		</>
 	);
 };
