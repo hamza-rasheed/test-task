@@ -8,10 +8,13 @@ import CustomButton from "../../reuseable/button/button";
 
 const Landing = () => {
 	return (
-		<section
-			className='h-screen bg-cover bg-center flex flex-col relative'
-			style={{ backgroundImage: `url(${images.landingImage})` }}
-		>
+		<section className='h-screen bg-cover bg-center flex flex-col relative'>
+			<img
+				src={images.landingImage}
+				alt='bg-gif'
+				className='h-full w-full object-cover absolute top-0 -z-10'
+				loading='lazy'
+			/>
 			<Navbar />
 			<div className='text-white xl:w-[76vw] w-[90vw] m-auto'>
 				<p className='font-cabinetGroteskRegular md:text-2xl text-lg'>
